@@ -1,0 +1,296 @@
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap');
+
+    :root {
+        --black: #272727;
+        --white: #FFFFFF;
+        --grey: #787878;
+        --light_grey: #BABABA;
+        --p_grey: #969696;
+        --strong_grey: #707070;
+        --blue: #287BCA;
+        --strong_blue: #04396A;
+    }
+
+    a{
+        text-decoration: none;
+    }    
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+        background-color: var(--black);
+    }
+
+    .container-home {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        row-gap: 10%;
+        margin: 6% 6%;
+
+    }
+
+    .container-perfil {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        margin: 5% 24% 0 18%;
+    }
+
+    .container-perfil > h2 {
+        align-self: flex-start;
+        color: var(--white);
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        margin: 4% 0;
+    }
+
+    .perfil-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 320px;
+        border: 2px solid var(--grey);
+        border-radius: 10px;
+        padding: 16px 30px;
+    }
+
+    .perfil-box h1 {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        width: 75%;
+        color: var(--white);
+    }
+
+    .perfil-box h2 {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        width: 75%;
+        color: var(--light_grey);
+    }
+
+    .perfil-box p {
+        width: 75%;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--p_grey);
+    }
+
+    .header-perfil {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-perfil > img {
+        width: 180px;
+    }
+
+    .publicacao {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        height: 196px;
+        border: 2px solid var(--grey);
+        border-radius: 10px;
+        padding: 16px 30px;
+        margin-bottom: 5%;
+    }
+
+    .publicacao .a-titulo {
+        width: 80%;
+    }
+
+    .publicacao h1 {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        color: var(--blue);
+        font-size: 21px;
+        text-decoration: underline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    .publicacao p {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 300;
+        width: 85%;
+        height: 60%;
+        color: var(--p_grey);
+        font-size: 14px;
+
+    }
+
+    .publicacao h2 {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        color: var(--strong_grey);
+        font-size: 15px;
+    }
+
+    .section-left-publi {
+        width: 75%;
+    }
+
+    .section-right-publi {
+        width: 25%;
+    }
+
+    .section-left-publi , .section-right-publi{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .section-right-publi {
+        align-items: flex-end;
+    }
+
+    .section-right-publi a img {
+        width: 32px;
+        margin: 0 8px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #button-postar {
+        position:               fixed;
+        width:                   80px;
+        height:                  80px;
+        border-radius:            50%;
+        background-color: var(--blue);
+        border:                  none;
+        bottom:                  32px;
+        right:                   64px;
+        
+    }
+
+    #button-postar :hover {
+        background-color: var(--strong_blue);
+        cursor:                pointer;
+    }
+
+    #button-postar img {
+        width: 48px;
+        
+    }
+
+    .white{        
+        color: white;
+    }
+
+    .button{
+        margin:                             40px;                
+        background-color:            var(--blue);
+        border:                             none;        
+        border-radius:                      20px;        
+        width:                              100px;
+        height:                             50px;
+        color:                             white;
+        font-size:                          15px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .button-alterar{
+        margin:                             40px;                
+        background-color:            var(--blue);
+        border:                             none;        
+        border-radius:                      20px;        
+        width:                              50px;
+        height:                             20px;
+        color:                             white;
+        font-size:                          10px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .button-excluir{
+        margin:                             40px;                
+        background-color:                    red;
+        border:                             none;        
+        border-radius:                      20px;        
+        width:                              50px;
+        height:                             20px;
+        color:                             white;
+        font-size:                          10px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    table{
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .space{
+        margin: 30px;
+    }
+
+    tr{
+        font-family: 'Titillium Web', sans-serif;        
+    }
+
+    td{
+        text-align: center;
+    }
+
+    .font{
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .button-confirm{
+        margin:                             40px;                
+        background-color:                  green;
+        border:                             none;        
+        border-radius:                      20px;        
+        width:                              100px;
+        height:                             50px;
+        color:                             white;
+        font-size:                          12px;
+        font-family: 'Titillium Web', sans-serif;
+    }    
+    
+    .box-materia{        
+        width: 300px;
+        font-size:                          15px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .input-materia{
+        padding: 5px;
+        font-size:                          15px;
+        font-family: 'Titillium Web', sans-serif;
+        border-radius: 10px;
+    }
+
+    .input-conteudo{
+        padding:                             5px;
+        font-size:                          15px;
+        font-family: 'Titillium Web', sans-serif;
+        border-radius:                      10px;
+        width:                            250px; 
+    }
+
+    .select-conteudo{
+        padding:                             5px;
+        font-size:                          15px;
+        font-family: 'Titillium Web', sans-serif;
+        border-radius:                      10px;
+    }
+
+    option{
+        padding:                             5px;
+        font-size:                          15px;
+        font-family: 'Titillium Web', sans-serif;     
+    }
+    
